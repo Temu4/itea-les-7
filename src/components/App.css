@@ -1,0 +1,86 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: 'ZCOOL KuaiLe', cursive;
+}
+.header{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  background: #012E40;
+  color: white;
+}
+.container{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  height: calc(100vh - 50px);
+  background: rgb(186, 206, 206);
+}
+.container__title{
+  margin-top: 100px;
+}
+.popup-container{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background: rgba(0, 0, 0, 0.8)
+}
+.popup-form{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background: #025E73;
+  color: white;
+  z-index: 2;
+  border-radius: 5px;
+  height: 300px;
+  width: 400px;
+}
+.popup-form--singIn{
+  height: 150px;
+}
+.popup-form__field{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+.popup-form__field select, .popup-form__field input{
+  width: 173px;
+  border: none;
+  border-radius: 2px;
+  padding: 5px 0px;
+}
+
+button {
+  font-family: 'ZCOOL KuaiLe', cursive;
+  height: 30px;
+  width: 100px;
+  border-radius: 5px;
+  background: white;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+}
+button:hover{
+  font-weight: 600;
+}
+.button--dark{
+  border: 1px solid white;
+  color: white;
+  background: #012E40;
+}
+.button--grey{
+  border: 1px solid white;
+  color: white;
+  background: rgb(122, 126, 128);
+}
